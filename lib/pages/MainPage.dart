@@ -8,7 +8,16 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('Hello flutter fan base')),
+      body: Container(
+        width: double.infinity,
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text('Hello flutter fan base'),
+              Text('Welcome to helper app')
+            ]),
+      ),
     );
   }
 }
