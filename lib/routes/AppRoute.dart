@@ -1,5 +1,6 @@
 import 'package:flutter_base/pages/MainPage.dart';
 import 'package:flutter_base/pages/UserPage.dart';
+import 'package:flutter_base/pages/auth/LoginPage.dart';
 import 'package:flutter_base/routes/RouteName.dart';
 
 import '../pages/UserDetailPage.dart';
@@ -11,5 +12,6 @@ class AppRoute {
     RouteName.USER: (context) => UserPage(),
     RouteName.USERDETAIL: (context) => UserDetailPage(),
     RouteName.USERNEW: (context) => UserNewPage(),
+    RouteName.LOGIN: (context) => LoginPage(),
   };
 }

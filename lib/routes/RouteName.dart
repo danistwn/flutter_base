@@ -3,4 +3,5 @@ class RouteName {
   static final USER = "/userPage";
   static final USERDETAIL = "/userDetailPage";
   static final USERNEW = "/userNewPage";
+  static final LOGIN = "/login";
 }
