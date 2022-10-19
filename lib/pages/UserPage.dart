@@ -10,9 +10,15 @@ class UserPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text('User List')),
-        body: ElevatedButton(
-            child: Text('Details'),
-            onPressed: () =>
-                Navigator.of(context).pushNamed(RouteName.USERDETAIL)));
+        body: Column(children: [
+          ElevatedButton(
+              child: Text('Details'),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed(RouteName.USERDETAIL)),
+          ElevatedButton(
+              child: Text('Register'),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed(RouteName.USERNEW))
+        ]));
   }
 }
